@@ -1,0 +1,697 @@
+@use 'variaveis';
+
+.shows {
+    padding: 2vw 5.6vw;
+    max-width: 100vw;
+    min-height: 50vw;
+
+    &__list {
+        display: none;
+        margin-top: 44px;
+        grid-template-columns: 1fr;
+        margin-top: 44px;
+        margin-left: 0;
+        padding-top: 5.6vw;
+        padding-left: 2vw;
+        background-image: url(/dist/images/em_breve/the_avengers.jpeg);
+        height: 100vh;
+        background-size: cover;
+        opacity: 75%;
+        border-radius: 10px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            background-image: url(/dist/images/em_breve/the_avengers_celular.png);
+            background-position-x: center;
+            height: 50vh;
+        }
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            flex-direction: column;
+            max-width: 50%;
+
+            @media (max-width: 768px) {
+                p {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+
+                h1, h5, h6 {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+                .class {
+                    display: none;
+                }
+            }
+
+            img {
+                max-width: 345px;
+                margin: 0 auto;
+            }
+
+            span{
+                display: block;
+            };
+
+            &__classification {
+                display: inline-flex;
+                margin-top: 20px;
+
+                @media (max-width: 768px) {
+                    display: none;
+              }
+    
+                img {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-height: 25px;
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__description {
+            max-width: 40vw;
+        }
+
+        hr {
+            margin-top: 14px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title {
+            font-size: 24px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title--small {
+            margin-top: 60px;
+            color: variaveis.$corTextoPrincipal;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .text--details {
+            font-size: 20px;
+            color: variaveis.$corTextoSecundario;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--director {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--name--director {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 10px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist--name {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 5px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+    }
+
+    &__list1 {
+        margin-top: 44px;
+        grid-template-columns: 1fr;
+        margin-top: 44px;
+        margin-left: 0;
+        padding-top: 5.6vw;
+        padding-left: 2vw;
+        background-image: url(/dist/images/mais_populares/banner_era_de_ultron.jpeg);
+        height: 100vh;
+        background-size: cover;
+        opacity: 75%;
+        border-radius: 10px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            background-image: url(/dist/images/mais_populares/banner_era_de_ultron_celular.png);
+            background-position-x: center;
+            height: 50vh;
+
+        }
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            flex-direction: column;
+            max-width: 50%;
+
+            @media (max-width: 768px) {
+                p {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+
+                h1, h5, h6 {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+                .class {
+                    display: none;
+                }
+
+                .text-small {
+                    display: none;
+                }
+            }
+
+            img {
+                max-width: 345px;
+                margin: 0 auto;
+            }
+
+            span{
+                display: block;
+            };
+
+            &__classification {
+                display: inline-flex;
+                margin-top: 20px;
+
+                @media (max-width: 768px) {
+                    display: none;
+              }
+    
+                img {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-height: 25px;
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__description {
+            max-width: 40vw;
+        }
+
+        hr {
+            margin-top: 14px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title {
+            font-size: 24px;
+
+            
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title--small {
+            margin-top: 60px;
+            color: variaveis.$corTextoPrincipal;
+
+            
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .text--details {
+            font-size: 20px;
+            color: variaveis.$corTextoSecundario;
+            margin-top: 20px;
+
+            
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--director {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--name--director {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 10px;
+
+            
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist--name {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 5px;
+
+            
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+    }
+
+    &__list2 {
+
+        margin-top: 44px;
+        grid-template-columns: 1fr;
+        margin-top: 44px;
+        margin-left: 0;
+        padding-top: 5.6vw;
+        padding-left: 2vw;
+        background-image: url(/dist/images/mais_no_star_plus/banner_vingadores_guerra_infinita.jpeg);
+        height: 100vh;
+        background-size: cover;
+        opacity: 75%;
+        border-radius: 10px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            background-image: url(/dist/images/mais_no_star_plus/banner_vingadores_guerra_infinita_celular.png);
+            background-position-x: center;
+            height: 50vh;
+        }
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            flex-direction: column;
+            max-width: 50%;
+
+            @media (max-width: 768px) {
+                p {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+
+                h1, h5, h6 {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+                .class {
+                    display: none;
+                }
+
+                .text-small {
+                    display: none;
+                }
+            }
+
+            img {
+                max-width: 345px;
+                margin: 0 auto;
+            }
+
+            span{
+                display: block;
+            };
+
+            &__classification {
+                display: inline-flex;
+                margin-top: 20px;
+
+                @media (max-width: 768px) {
+                    display: none;
+              }
+    
+                img {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-height: 25px;
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__description {
+            max-width: 40vw;
+        }
+
+        hr {
+            margin-top: 14px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title {
+            font-size: 24px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title--small {
+            margin-top: 60px;
+            color: variaveis.$corTextoPrincipal;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .text--details {
+            font-size: 20px;
+            color: variaveis.$corTextoSecundario;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--director {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--name--director {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 10px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist--name {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 5px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+
+    }
+
+    &__list3 {
+
+        margin-top: 44px;
+        grid-template-columns: 1fr;
+        margin-top: 44px;
+        margin-left: 0;
+        padding-top: 5.6vw;
+        padding-left: 2vw;
+        background-image: url(/dist/images/end_game/banner_vingadores_endgame.jpeg);
+        height: 100vh;
+        background-size: cover;
+        opacity: 75%;
+        border-radius: 10px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            background-image: url(/dist/images/end_game/banner_vingadores_endgame_celular.png);
+            background-position-x: center;
+            height: 50vh;
+        }
+
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            flex-direction: column;
+            max-width: 50%;
+
+            @media (max-width: 768px) {
+                p {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+
+                h1, h5, h6 {
+                    font-size: 12px;
+                    width: 100vw;
+                    height: 50vh;
+                }
+
+                .class {
+                    display: none;
+                }
+
+                .text-small {
+                    display: none;
+                }
+            }
+
+            img {
+                max-width: 345px;
+                margin: 0 auto;
+            }
+
+            span{
+                display: block;
+            };
+
+            &__classification {
+                display: inline-flex;
+                text-align: center;
+                justify-content: center;
+                margin-top: 20px;
+
+                @media (max-width: 768px) {
+                    display: none;
+              }
+    
+                img {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-height: 20px;
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__description {
+            max-width: 40vw;
+        }
+
+        hr {
+            margin-top: 14px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title {
+            font-size: 24px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .title--small {
+            margin-top: 60px;
+            color: variaveis.$corTextoPrincipal;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .text--details {
+            font-size: 20px;
+            color: variaveis.$corTextoSecundario;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--director {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--name--director {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 10px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist {
+            font-size: 18px;
+            color: variaveis.$corTextoPrincipal;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+
+        .cast--artist--name {
+            font-size: 16px;
+            color: variaveis.$corTextoSecundario;
+            margin-bottom: 5px;
+
+            @media (max-width: 768px) {
+                display: none;
+          }
+        }
+    }
+
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+        }
+        
+        &__button {
+            color: variaveis.$corTextoSecundario;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--is-active {
+                border-color: variaveis.$corTextoSecundario;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    
+    @media (max-width: 768px) {
+        img {
+            max-width: 110px;
+        }
+    }
+}
+
+
+
