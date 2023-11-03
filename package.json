@@ -2,26 +2,20 @@
   "name": "exercicio_m21_avengers_movies",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cassgkn/avengers_movies.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cassgkn/avengers_movies/issues"
-  },
-  "homepage": "https://github.com/cassgkn/avengers_movies#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.69.5"
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.4"
   }
 }
